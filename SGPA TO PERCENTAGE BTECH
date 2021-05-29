@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+
+int main()
+{
+    float sem1,sem2,sem3,sem4,sem5,sem6,sem7,sem8;
+    float p1,p2,p3,p4;
+    float sum;
+
+    printf("welcome !!!! \n");
+    printf("CALCULATE YOUR GJUST CGPA INTO PERCENTAGE \n");
+    printf("ENTER YOUR SEM1 SGPA:\n");
+    scanf("%f",&sem1);
+    printf("ENTER YOUR SEM2 SGPA:\n");
+    scanf("%f",&sem2);
+    printf("ENTER YOUR SEM3 SGPA:\n");
+    scanf("%f",&sem3);
+    printf("ENTER YOUR SEM4 SGPA:\n");
+    scanf("%f",&sem4);
+    printf("ENTER YOUR SEM5 SGPA:\n");
+    scanf("%f",&sem5);
+    printf("ENTER YOUR SEM6 SGPA:\n");
+    scanf("%f",&sem6);
+    printf("ENTER YOUR SEM7 SGPA:\n");
+    scanf("%f",&sem7);
+    printf("ENTER YOUR SEM8 SGPA:\n");
+    scanf("%f",&sem8);
+
+    p1=(sem1+sem2)/20*10;
+    p2=(sem3+sem4)/20*20;
+    p3=(sem5+sem6)/20*30;
+    p4=(sem7+sem8)/20*40;
+
+    printf("1st year percentile is %f \n",p1);
+    printf("2nd year percentile is %f \n",p2);
+    printf("3rd year percentile is %f \n",p3);
+    printf("4th year percentile is %f \n",p4);
+
+    sum=p1+p2+p3+p4;
+    printf("overall percentage is %f",sum);
+
+
+
+
+    return 0;
+
+
+}
+
