@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+
+
+void deepak();
+
+int main()
+{
+
+    deepak();
+    printf("END HERE  \n");
+    deepak(); //got repeated again so it will again ask for input
+    return 0;
+}
+void deepak()
+{
+    int a,b,sum;
+    printf("eneter your number a: \n");
+    scanf("%d",&a);
+    printf("eneter your number b: \n");
+    scanf("%d",&b);
+    sum=a*b;
+    printf("the sum is %d \n",a*b);
+}
