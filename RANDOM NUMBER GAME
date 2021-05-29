@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int main(){
+    int rand,guess,guesses=1;
+    srand(time(0));
+    rand=random()%100;
+    do {
+        printf("ENTER YOUR GUESSING NUMBER :\n");
+        scanf("%d", &guess);
+
+        if (guess < rand) {
+            printf("the number is less than actual number \n");
+            printf("BETTER LUCK NEXT TIME \n");
+        } else if (guess > rand) {
+            printf("your guess is more than the actual number in %d guesses \n", guesses);
+        } else {
+            printf("YOU HAVE GUESS CORRECTLY \n CONGRATS!!! \n");
+        }
+        guesses++;
+    }
+    while(guess!=rand);
+    return 0;
+
+
+}
+
+    
