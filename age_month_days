@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(){
+    int yr,mn,d;
+    int currentyear=2021;
+    int currentmonth=06;
+    int currentdate=01;
+    int age,months,days;
+    printf("ENTER YOUR BIRTH YEAR :- \n ");
+    scanf("%d",&yr);
+    printf("ENTER YOUR BIRTH Month in %d YEAR:- \n ",yr);
+    scanf("%d",&mn);
+    printf("ENTER YOUR BIRTH DATE IN %d YEAR AND %d Month :- \n ",yr,mn);
+    scanf("%d",&d);
+    age=currentyear-yr;
+    months=currentmonth-mn;
+    days=currentdate-d;
+
+    printf("YOU ARE %d yr old %d months and %d days \n",age,months,days);
+    return 0;
+
+}
