@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(){
+    int num[5];
+    printf("LARGEST NUMBER FINDER !!!!!!!!!!!! \n");
+    printf("eneter your 5 numbers: \n");
+    for(size_t i=0;i<5;i++) {
+        scanf("%d", &num[i]);
+    }
+    int maxnum=0;
+    for(size_t i=0;i<5;i++){
+        if(num[i]>maxnum)
+        {
+            maxnum=num[i];
+        }
+    }
+    printf("the maximum number is %d",maxnum);
+
+
+}
