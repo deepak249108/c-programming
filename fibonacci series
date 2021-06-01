@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+    printf("WELCOME TO SRIES SYSTEM \n");
+    printf("#################fibonacci series################### \n");
+    printf("MADE BY :- DEEPAK YADAV $ \n \n");
+    int a,b,c,num,i;
+    a=0;
+    b=1;
+    printf("ENTER NO. FOR FIBONACCI SERIES UPPER LIMIT OR UPTO \n :-");
+    scanf("%d",&num);
+
+    for (i=0;i<=num;i++){
+        c=a+b;
+        printf("%d \n",c);
+        a=b;
+        b=c;
+    }
+    return 0;
+}
